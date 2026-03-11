@@ -1,4 +1,4 @@
-const LearnJest = require('../learnJest');
+const LearnJest = require('../learnJest.cjs');
 
 describe('learnJest', () => {
   let learnJest;
