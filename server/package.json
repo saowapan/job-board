@@ -27,6 +27,7 @@
     "ext": "graphql,js"
   },
   "jest": {
-    "transform": {}
+    "transform": {},
+    "testMatch": ["**/?(*.)+(spec|test).[jt]s?(x)", "**/?(*.)+(spec|test).cjs"]
   }
 }
