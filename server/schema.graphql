@@ -1,0 +1,21 @@
+type Query {
+  jobs: [Job!]   #! mean Job cannot be null
+}
+
+type Company {
+  id: ID!
+  name: String!
+  description: String
+}
+"""
+Represents a job ad posted to our board.
+"""
+type Job {
+  id: ID! #! mean must be set
+  company: Company!
+  title: String!
+  description: String
+
+  """The date when the job was published, in ISO-8601 format. E.g. `2026-12-31`"""
+  date: String
+}
